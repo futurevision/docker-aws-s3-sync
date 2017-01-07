@@ -1,3 +1,7 @@
+[![](https://images.microbadger.com/badges/image/futurevision/aws-s3-sync.svg)](https://microbadger.com/images/futurevision/aws-s3-sync "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/futurevision/aws-s3-sync.svg)](https://microbadger.com/images/futurevision/aws-s3-sync "Get your own version badge on microbadger.com")
+
+
 #futurevision/aws-s3-sync
 
 Docker container that periodically syncs a folder to Amazon S3 using the [AWS Command Line Interface tool](https://aws.amazon.com/cli/) and cron.
