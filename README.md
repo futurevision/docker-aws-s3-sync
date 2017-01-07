@@ -15,8 +15,8 @@ Docker container that periodically syncs a folder to Amazon S3 using the [AWS Co
 
 * `-e KEY=<KEY>`: User Access Key
 * `-e SECRET=<SECRET>`: User Access Secret
-* `-e REGION=<REGION>`: AWS Region where you bucket is locaed
-* `-e BUCKET=<BUCKET>`: The name of your S3 bucket
+* `-e REGION=<REGION>`: Region of your bucket
+* `-e BUCKET=<BUCKET>`: The name of your bucket
 * `-v /path/to/backup:/data:ro`: mount target local folder to container's data folder. Content of this folder will be synced with S3 bucket.
 
 ### Optional parameters:
