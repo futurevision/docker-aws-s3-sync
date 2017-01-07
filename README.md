@@ -6,7 +6,8 @@ Docker container that periodically syncs a folder to Amazon S3 using the [AWS Co
 
     docker run -d [OPTIONS] futurevision/aws-s3-sync
 
-### Parameters:
+
+### Required Parameters:
 
 * `-e KEY=<KEY>`: User Access Key
 * `-e SECRET=<SECRET>`: User Access Secret
