@@ -1,8 +1,9 @@
-FROM alpine:3.3
+FROM alpine:3.7
 
 RUN apk --no-cache add \
       py-pip \
-      python &&\
+      python \
+      curl &&\
     pip install --upgrade \
       pip \
       awscli
