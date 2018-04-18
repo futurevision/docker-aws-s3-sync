@@ -58,6 +58,8 @@ Sync just once (container is deleted afterwards):
       -v /home/user/data:/data:ro \
       futurevision/aws-s3-sync
 
+If using AWS Role based, make sure to set Network Mode to host.
+
 #### AWS Policy role
 
     {
