@@ -24,7 +24,7 @@ Docker container that periodically syncs a folder to Amazon S3 using the [AWS Co
 * `-e PARAMS=`: parameters to pass to the sync command ([full list here](http://docs.aws.amazon.com/cli/latest/reference/s3/sync.html)).
 * `-e BUCKET_PATH=<BUCKET_PATH>`: The path of your s3 bucket where the files should be synced to (must start with a slash), defaults to "/" to sync to bucket root
 * `-e CRON_SCHEDULE="0 1 * * *"`: specifies when cron job starts ([details](http://en.wikipedia.org/wiki/Cron)), defaults to `0 1 * * *` (runs every night at 1:00).
-* `no-cron`: run container once and exit (no cron scheduling).
+* `now`: run container once and exit (no cron scheduling).
 
 ## Examples:
 
@@ -48,7 +48,7 @@ Sync just once (container is deleted afterwards):
 		-e REGION=region \
         -e BUCKET=mybucket \
         -v /home/user/data:/data:ro \
-        futurevision/aws-s3-sync no-cron
+        futurevision/aws-s3-sync now
 
 ## Credits
 
